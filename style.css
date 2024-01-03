@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202248;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 24px;
+  gap: 20px;
+}
+
+.png {
+  height: 24px;
+  width: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .hamburger-cont .png {
+  display: none;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .lefthero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .lefthero .hi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero .lefthero .hi span {
+  color: white;
+}
+
+.hero .lefthero .profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .lefthero .profile h1 {
+  color: white;
+}
+
+.hero .lefthero .profile p {
+  color: orange;
+}
+
+.hero .righthero {
+  display: flex;
+}
+
+.hero .righthero img {
+  height: 20%;
+  width: 200px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project .project-num {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+/* .project .project-num img{
+    width: 40%;
+} */
+
+.project .project-num span {
+  display: flex;
+  align-self: center;
+  color: white;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .header .hamburger-cont .png {
+    display: flex;
+  }
+  .header ul {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero .lefthero .hi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .lefthero .profile p {
+    color: orange;
+    display: flex;
+    justify-content: center;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
